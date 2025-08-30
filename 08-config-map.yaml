@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pod-config 
+  labels:
+   purpose: config
+   env: dev
+data:
+  COURSE: "devops with aws"
+  DURATION: "5 months" 
+  TRAINER: "venu" 
+
