@@ -7,5 +7,5 @@ spec:
   - name: nginx
     image: nginx
     envfrom:
-    -ConfigMapRef:
+    -configMapRef:
       name: pod-config
