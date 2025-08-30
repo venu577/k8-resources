@@ -1,11 +1,10 @@
 apiVersion: v1
-kind: pod 
+kind: Pod
 metadata:
- name: naginx
- labels:
+  name: nginx
+  labels:
     purpose: demo
 spec:
- containers:
- - name: naginx
-   image: naginx
-     
+  containers:
+  - name: nginx
+    image: nginx
