@@ -1,0 +1,11 @@
+apiversion: v1
+kind: pod 
+metadata:
+ name: naginx
+ labels:
+    purpose: demo
+spec:
+ containers:
+ - name: naginx
+   image: naginx
+     
