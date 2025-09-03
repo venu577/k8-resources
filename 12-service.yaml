@@ -10,19 +10,20 @@ spec:
     project: roboshop
     environment: dev
   ports:
-    - protocol: TCP
-      port: 80 # service port
-      targetPort: 80 # container port
+   - protocol: TCP
+     port: 80 #service port
+     targetport: 80 #pod port or container port
+     
 ---
 apiVersion: v1
-kind: Pod
+kind: Pod #p should be capital P
 metadata:
   name: nginx
   labels:
-    purpose: service-demo
+    purpose: serive-demo
     project: roboshop
     environment: dev
 spec:
   containers:
   - name: nginx
-    image: nginx
+    image: nginx    
