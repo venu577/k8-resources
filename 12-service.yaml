@@ -10,9 +10,9 @@ spec:
     project: roboshop
     environment: dev
   ports:
-  - protocol: TCP
-    port: 80 #service port
-    targetport: 80 #pod port or container port
+   - protocol: TCP
+     port: 80 #service port
+     targetport: 80 #pod port or container port
 ---
 apiVersion: v1
 kind: Pod #p should be capital P
